@@ -5,7 +5,7 @@ from django.db import models
 class Estudiante(models.Model):
     
     class Meta:
-        ordering = ["tipo_estudiante"]
+        ordering = ["tipo_estudiante", "nombre"]
         verbose_name_plural = "Los Estudiantes"
     
     opciones_tipo_estudiante = (
